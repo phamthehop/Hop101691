@@ -1,14 +1,15 @@
 import math
 
-x = int(input())
-n = int(input())
-ep = float(input())
+x = float(input("Nhập giá trị x (số thực): "))
+ep = float(input("Nhập giá trị ep (0 < ep < 1): "))
 
-tam = 0
-kq = 0
-for i in range(1, n + 1):
-    tam = (x ** i) / math.factorial(i)
-    if abs(tam) < ep:
-        break
-    kq += tam
-print(1+kq)
+n = 0
+gia_tri_hang = 1  
+kq = 1 
+
+while abs(gia_tri_hang) >= ep:
+    n += 1
+    gia_tri_hang = (x ** n) / math.factorial(n)
+    kq += gia_tri_hang
+
+print(f"Giá trị gần đúng của e^{x} là: {kq}")
