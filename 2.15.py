@@ -1,7 +1,7 @@
 import math
 
-x = float(input("Nhập giá trị x (số thực): "))
-ep = float(input("Nhập giá trị ep (0 < ep < 1): "))
+x = float(input())
+ep = float(input())
 
 n = 0
 gia_tri_hang = 1  
