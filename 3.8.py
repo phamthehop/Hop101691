@@ -3,7 +3,7 @@ def muoisanghai(n):
         return "0"
     nhiphan = ""
     while n > 0:
-        nhiphan=str(n % 2) + nhiphan
+        nhiphan = str(n % 2) + nhiphan
         n // = 2
     return nhiphan
 
