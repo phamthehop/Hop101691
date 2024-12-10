@@ -1,8 +1,8 @@
 import math
 
 def tinh_tong(a):
-    S = 1  # Khởi tạo tổng ban đầu
-    n = 1   # Khởi tạo chỉ số n
+    S = 1 
+    n = 1 
     while True:
         hieu = 1 / math.factorial(2 * n + 1)  
         if hieu < a:
