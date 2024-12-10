@@ -1,11 +1,17 @@
 import math
 
-n = int(input())
+def tinh_tong(a):
+    S = 1  # Khởi tạo tổng ban đầu
+    n = 1   # Khởi tạo chỉ số n
+    while True:
+        hieu = 1 / math.factorial(2 * n + 1)  
+        if hieu < a:
+            break  
+        S += hieu  
+        n += 1   
+    return S
+
 a = float(input())
-S = 0
-for i in range(1, 2*n + 1,2):
-    tam=1/i
-    S += 1/math.factorial(i)
-    if tam < a:
-        print(S)
-        break
+
+ket_qua = tinh_tong(a)
+print(f"Tổng là: {ket_qua}")
