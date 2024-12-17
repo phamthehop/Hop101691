@@ -13,6 +13,9 @@ class Book:
     def xuat(self):
         print("{0} {1} {2} {3}".format(self.name,self.page,self.cost,self.average))
 
+    def ghi_vao_file(self, f):
+        f.write("{0} {1} {2} {3}\n".format(self.name, self.page, self.cost, self.average))
+
 n = int(input())
 books=[]
 for i in range(n):
@@ -25,3 +28,7 @@ books.sort(key=lambda x:x.average, reverse=True)
 
 for book in books:
     book.xuat()
+
+with open("sach.txt", "w", encoding="utf-8") as f:
+    for book in books:
+        book.ghi_vao_file(f)
