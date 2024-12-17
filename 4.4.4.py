@@ -3,7 +3,7 @@ class Nhanvien:
         pass
     def nhap(self):
         #Nhập sai
-        self.ma,self.ten,,self.hesoluong,self.phucap = input().split()
+        self.ten,self.ma,,self.hesoluong,self.phucap = input().split()
         self.ma = int(self.ma)
         self.hesoluong = float(self.hesoluong)
         self.phucap = int(self.phucap)
