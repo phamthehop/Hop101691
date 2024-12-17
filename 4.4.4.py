@@ -18,8 +18,5 @@ for i in range(n):
     dsnv.append(nv)
 
 print("Nhan vien co luong thap nhat")
-min_nv = dsnv[0]
-for i in dsnv:
-    if i.luongthang < min_nv.luongthang:
-        min_nv = i
+min_nv = min(dsnv, key=lambda nv: nv.luongthang)
 min_nv.inthongtin()
