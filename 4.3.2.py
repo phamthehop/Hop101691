@@ -14,8 +14,8 @@ for i in range(m):
     dongC = []
     dongD = []
     for j in range(n):
-        dongC.append(A[i][j]+B[i][j])
-        dongD.append(A[i][j]-B[i][j])
+        dongC.append(A[i][j] + B[i][j])
+        dongD.append(A[i][j] - B[i][j])
     C.append(dongC)
     D.append(dongD)
 
