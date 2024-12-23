@@ -1,4 +1,4 @@
-m =int(input())
+m = int(input())
 
 A = []
 for _ in range(m):
