@@ -15,7 +15,7 @@ class NV:
 n = int(input())
 dsnv = []
 for i in range(n):
-    nv=NV()
+    nv = NV()
     nv.nhap()
     dsnv.append(nv)
     
