@@ -3,7 +3,6 @@ class NV:
         pass
 
     def nhap(self):
-        
         self.ten,self.ma,self.hesoluong,self.phucap = input().split()
         self.ma = int(self.ma)
         self.hesoluong = float(self.hesoluong)
