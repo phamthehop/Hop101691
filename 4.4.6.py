@@ -9,7 +9,7 @@ class NV:
         self.diemtoan = float(self.diemtoan)
         self.diemtriet = float(self.diemtriet)
         self.diemLTC = float(self.diemLTC)
-        self.diemtrungbinh = (self.diemtoan + self.diemtriet + self.diemLTC)/3
+        self.diemtrungbinh = (self.diemtoan + self.diemtriet + self.diemLTC) / 3
     
     def xuat(self):
         print("{0} {1} {2:.2f} {3:.2f} {4:.2f} {5:.2f}".format(self.ma,self.ten,self.diemtoan,self.diemtriet,self.diemLTC,self.diemtrungbinh))
@@ -17,7 +17,7 @@ class NV:
 n = int(input())
 dsnv = []
 for i in range(n):
-    nv=NV()
+    nv = NV()
     nv.nhap()
     dsnv.append(nv)
     
