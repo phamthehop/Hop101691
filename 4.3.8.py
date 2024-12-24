@@ -1,22 +1,22 @@
 n = int(input())
 
-ma_tran = []
+A = []
 for _ in range(n):
-    ma_tran.append(list(map(int, input().split())))
+    A.append(list(map(int, input().split())))
 
-la_tam_giac_tren = True
-la_tam_giac_duoi = True
+tamgiactren = True
+tamgiacduoi = True
 
 for hang in range(n):
     for cot in range(n):
-        if hang > cot and ma_tran[hang][cot] != 0:
-            la_tam_giac_tren = False
-        if hang < cot and ma_tran[hang][cot] != 0:  
-            la_tam_giac_duoi = False
+        if hang > cot and A[hang][cot] != 0:
+            tamgiactren = False
+        if hang < cot and A[hang][cot] != 0:  
+            tamgiacduoi = False
 
-if la_tam_giac_tren:
+if tamgiactren:
     print("UPPER TRIANGLE")
-elif la_tam_giac_duoi:
+elif tamgiacduoi:
     print("LOWER TRIANGLE")
 else:
     print("NONE")
